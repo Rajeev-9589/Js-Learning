@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="list-container" id="list-left" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Available Items</h2>
+            <ul id="left-items">
+                <li draggable="true" ondragstart="drag(event)" id="item1">Item 1</li>
+                <li draggable="true" ondragstart="drag(event)" id="item2">Item 2</li>
+                <li draggable="true" ondragstart="drag(event)" id="item3">Item 3</li>
+            </ul>
+        </div>
+        <div class="list-container" id="list-right" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Selected Items</h2>
+            <ul id="right-items">
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
